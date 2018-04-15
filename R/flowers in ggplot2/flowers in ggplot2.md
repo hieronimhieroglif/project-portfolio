@@ -26,7 +26,7 @@ x <- sin(t)
 y <- cos(t)
 df <- data.frame(t, x, y)
 
-# Make a scatter plot of points in a circle
+# Scatter plot of points in a circle
 p <- ggplot(df, aes(x, y))
 p + geom_point()
 ```
@@ -58,7 +58,7 @@ x <- sin(t)
 y <-cos(t)
 df <- data.frame(t, x, y)
 
-# Make a scatter plot of points in a spiral
+# Scatter plot of points in a spiral
 p <- ggplot(df, aes(x*t, y*t))
 p + geom_point()
 ```
@@ -86,7 +86,7 @@ p + geom_point()
 ```R
 df <- data.frame(t, x, y)
 
-# Make a scatter plot of points in a spiral
+# Scatter plot of points in a spiral
 p <- ggplot(df, aes(x*t, y*t))
 p + geom_point() +
 theme(panel.background=element_rect(fill="white"), panel.grid=element_blank(), 
@@ -101,7 +101,7 @@ theme(panel.background=element_rect(fill="white"), panel.grid=element_blank(),
 
 
 ```R
-# Maybe just check if one of the this are blank, 
+# checking if one of the this are blank, 
 # seems too much to check them all...
 
 run_tests({
@@ -115,38 +115,6 @@ run_tests({
     })
 })
 ```
-
-
-
-
-    <ProjectReporter>
-      Inherits from: <ListReporter>
-      Public:
-        .context: NULL
-        .end_context: function (context) 
-        .start_context: function (context) 
-        add_result: function (context, test, result) 
-        all_tests: environment
-        cat_line: function (...) 
-        cat_tight: function (...) 
-        clone: function (deep = FALSE) 
-        current_expectations: environment
-        current_file: some name
-        current_start_time: 15.492 0.212 796.01 0 0
-        dump_test: function (test) 
-        end_context: function (context) 
-        end_reporter: function () 
-        end_test: function (context, test) 
-        get_results: function () 
-        initialize: function (...) 
-        is_full: function () 
-        out: 3
-        results: environment
-        rule: function (...) 
-        start_context: function (context) 
-        start_file: function (name) 
-        start_reporter: function () 
-        start_test: function (context, test) 
 
 
 ## 5. A bit of makeup: size, color and transparency
@@ -169,7 +137,7 @@ theme(panel.background=element_rect(fill="white"), panel.grid=element_blank(),
 
 
 ## 6. Play with aesthetics: the dandelion
-<p>Until now, all points have the same appearance (<code>size</code>, <code>color</code>, <code>shape</code>, and <code>alpha</code>). Sometimes you will want to make the appearance of the points dependent on a variable in your dataset. Now we will make size variable. We will also change the shape of points. Although we won't be able to blow on it, the resulting image should remind you of a dandelion.</p>
+<p>Until now, all points have the same appearance (<code>size</code>, <code>color</code>, <code>shape</code>, and <code>alpha</code>). Sometimes one will want to make the appearance of the points dependent on a variable in your dataset. Now I will make size variable. I will also change the shape of points. Although I won't be able to blow on it, the resulting image should remind you of a dandelion.</p>
 
 
 ```R
@@ -188,7 +156,7 @@ theme(panel.background=element_rect(fill="white"), panel.grid=element_blank(),
 
 
 ## 7. Put all it together: the sunflower
-<p>Plants not only use the Golden Angle to arrange leaves. It is also found in the arrangement of sunflower seeds. We don't need anything new to draw a sunflower; we just need to combine some of the things we already know.</p>
+<p>Plants not only use the Golden Angle to arrange leaves. It is also found in the arrangement of sunflower seeds.</p>
 
 
 ```R
@@ -237,7 +205,7 @@ theme(panel.background=element_rect(fill="darkmagenta"), panel.grid=element_blan
 
 ## 9. All together now: imaginary flowers
 
-<p>The techniques shown so far allows you to create an <em>infinite</em> number of patterns inspired by nature: the only limit is your imagination. But making art has also been a fun excuse to learn to use <code>ggplot</code>. All the tricks used in this notebook are useful when plotting <em>real</em> data too.</p>
+<p>The techniques shown so far allows to create an <em>infinite</em> number of patterns inspired by nature: the only limit is your imagination. But making art has also been a fun excuse to learn to use <code>ggplot</code>. All the tricks used in this notebook are useful when plotting <em>real</em> data too.</p>
 
 ```R
 angle <- 13*pi/180
